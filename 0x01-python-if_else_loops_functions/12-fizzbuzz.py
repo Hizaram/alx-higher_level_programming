@@ -10,7 +10,7 @@ def fizzbuzz():
         elif (n % 5 == 0):
             print('Buzz', end=' ')
         else:
-            print(f"{n}", end=' ')
+            print("{:d}".format(n), end=' ')
 
 
 fizzbuzz()

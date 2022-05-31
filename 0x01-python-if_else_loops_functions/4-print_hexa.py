@@ -12,4 +12,4 @@ def get_hexa(number):
 
 
 for number in range(99):
-    print(f"{number} = 0x{get_hexa(number)}")
+    print("{:d} = 0x{}".format(number, get_hexa(number)))

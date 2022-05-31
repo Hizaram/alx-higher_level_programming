@@ -2,6 +2,6 @@
 
 for n in range(100):
     if n != 99:
-        print(f"{n:02d}", end=', ')
+        print("{:02d}".format(n), end=', ')
     else:
-        print(f"{n:02d}")
+        print("{n:02d}".format(n))

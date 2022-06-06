@@ -8,8 +8,8 @@ def print_matrix_integer(matrix=[[]]):
         for r in range(rows):
             for c in range(columns):
                 if c == columns - 1:
-                    print('{}'.format(matrix[r][c]))
+                    print('{:d}'.format(matrix[r][c]))
                 else:
-                    print('{} '.format(matrix[r][c]), end='')
+                    print('{:d} '.format(matrix[r][c]), end='')
     else:
         print()

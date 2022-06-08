@@ -3,10 +3,12 @@
 
 def best_score(a_dictionary):
     if a_dictionary is not None:
-        score = None
+        score = -99999
         stud = None
         for k in a_dictionary.keys():
-            if score is None or a_dictionary[k] > score:
+            if a_dictionary[k] is None:
+                return None
+            if  a_dictionary[k] > score:
                 score = a_dictionary[k]
                 stud = k
             return stud

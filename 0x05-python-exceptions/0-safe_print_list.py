@@ -10,7 +10,7 @@ def safe_print_list(my_list=[], x=0):
         except (TypeError, ValueError):
             pass
         except IndexError:
-            break
+            pass
 
     print()
     return counter

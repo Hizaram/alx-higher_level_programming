@@ -5,7 +5,7 @@
 class Square:
     """a class Square"""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """__init__ method that sets the size and position of a square
 
         Args:
@@ -39,9 +39,9 @@ class Square:
             ValueError: if `size` is less than zero
 
         """
-        if not isinstance(size, int):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if size < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
@@ -56,7 +56,7 @@ class Square:
         Args:
             value (tuple): tuple of two, positive integer coordinates
         Raises:
-            TypeError: if `value` is not a tuple of two positive integer coordinates
+            TypeError: if `value` is not tuple of 2 positive int coordinates
 
         """
         if not isinstance(value, tuple):

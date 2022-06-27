@@ -14,6 +14,16 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
+    def area(self):
+        """returns the area of rect"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """returns the perimeter of rect"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return self.__width * 2 + self.__height * 2
+
     @property
     def width(self):
         """returns the width of rectangle"""
@@ -54,11 +64,25 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__height = value
 
+    def __str__(self):
+        """Representation of the rectangle with char `#`
+        Returns:
+            string representation of rectangle
+        """
+        string = ''
+        if self.__width == 0 or self.__height == 0:
+            return string
+        for r in range(self.__height - 1):
+            for c in range(self.__width):
+                string += '#'
+            string += '\n'
+        string += '#' * self.__width
+        return string
 
-if __name__ == '__main__':
-    my_rectangle = Rectangle(2, 4)
-    print(my_rectangle.__dict__)
+    def __repr__(self):
+        """Representation (str) of Rectangle Object"""
+        return 'Rectangle({:d}, {:d})'.format(self.__width, self.__height)
 
-    my_rectangle.width = 10
-    my_rectangle.height = 3
-    print(my_rectangle.__dict__)
+    def __del__(self):
+        """Method upon when an instance is deleted"""
+        print("Bye rectangle...")

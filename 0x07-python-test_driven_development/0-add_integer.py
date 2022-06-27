@@ -10,7 +10,7 @@ def add_integer(a, b=98):
     """ add_integer - adds two integers (a, b)
     Raises:
         TypeEror if any of the inputs isn't an integer
-    Returns: 
+    Returns:
         integer sum
     """
     if not isinstance(a, int) and not isinstance(a, float):

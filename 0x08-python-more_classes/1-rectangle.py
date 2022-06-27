@@ -11,8 +11,8 @@ class Rectangle:
             width (int): integer width
             height (int): height as an integer
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -56,7 +56,7 @@ class Rectangle:
 
 
 if __name__ == '__main__':
-    my_rectangle = Rectangle(2, 4)
+    my_rectangle = Rectangle(-2, 4)
     print(my_rectangle.__dict__)
 
     my_rectangle.width = 10

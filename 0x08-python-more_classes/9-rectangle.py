@@ -18,8 +18,8 @@ class Rectangle:
             width (int): integer width
             height (int): height as an integer
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     def area(self):
@@ -124,3 +124,10 @@ class Rectangle:
             rectangle object with square dimensions (size)
         """
         return cls(size, size)
+
+
+if __name__ == '__main__':
+    my_square = Rectangle.square("hello")
+    print("Area: {} - Perimeter: {}".format(
+        my_square.area(), my_square.perimeter()))
+    print(my_square)

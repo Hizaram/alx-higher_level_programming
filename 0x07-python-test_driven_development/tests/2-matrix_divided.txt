@@ -1,0 +1,23 @@
+The ``2-matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``matrix_divided`` from the ``2-matrix_divided`` module:
+
+-------------------
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+
+# matrix = [[9, 2, 8]], div = int
+>>> matrix_divided([[9, 2, 8]], 2)
+[[4.5, 1.0, 4.0]]
+
+# matrix = [[7, 23, 5]], div = 0
+>>> matrix_divided([[7, 23, 5]], 0)
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero

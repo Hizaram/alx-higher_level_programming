@@ -9,13 +9,4 @@ class MyList(list):
         Args: unsorted list
         Returns: sorted list
         """
-        array = self[:]
-        isDone = False
-
-        while not isDone:
-            isDone = True
-            for i in range(len(array)-1):
-                if array[i] > array[i+1]:
-                    arrray[i], array[i+1] = array[i+1], array[i]
-                    isDone = False
-        print(array)
+        print(sorted(self))

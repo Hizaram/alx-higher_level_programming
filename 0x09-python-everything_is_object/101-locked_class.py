@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Script that creates a class LockedClass""" 
 
 
 class LockedClass:

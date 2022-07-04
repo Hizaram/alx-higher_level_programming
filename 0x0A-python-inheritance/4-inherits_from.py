@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that checks if an obj is exactly an instance of 
+"""Module that checks if an obj is exactly an instance of
 an inherited class"""
 
 

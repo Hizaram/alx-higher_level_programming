@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!!/usr/bin/python3
 """Function that appends a line after a specified line is read
 from a file"""
 

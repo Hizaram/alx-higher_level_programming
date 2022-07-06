@@ -5,15 +5,15 @@
 class Student:
     """A Student class"""
 
-    def __init__(self, firstname, lastname, age):
+    def __init__(self, first_name, last_name, age):
         """__init__ method for class Student
         Args:
             first_name (str): student firstName
             last_name (str): student lastName
             age (int): age of student
         """
-        self.firstname = firstname
-        self.lastname = lastname
+        self.first_name = first_name
+        self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):

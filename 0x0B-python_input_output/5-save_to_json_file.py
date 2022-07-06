@@ -4,7 +4,7 @@ using JSON string representation"""
 import json
 
 
-def save_to_json_file(my_obj, filename=""):
+def save_to_json_file(my_obj, filename):
     """Writes my_obj to filename using json representation
     Args:
         my_obj (Object): object to be serialized

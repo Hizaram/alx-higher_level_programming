@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Function that appends a line after a specified line is read
-from a file"""
+in a file"""
 
 
 def append_after(filename="", search_string="", new_string=""):

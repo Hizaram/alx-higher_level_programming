@@ -18,5 +18,4 @@ class Student:
 
     def to_json(self):
         """serializes an object"""
-        obj_dict = self.__dict__
-        return obj_dict
+        return (self.__dict__)

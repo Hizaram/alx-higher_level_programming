@@ -18,6 +18,6 @@ def append_after(filename="", search_string="", new_string=""):
             if search_string in line:
                 new_lines.append(new_string)
 
-    with open(filename, 'w', encoding='utf-8') as nf:
+    with open(filename, 'w', encoding='utf-8') as f:
         for line in new_lines:
-            nf.write(line)
+            f.write(line)

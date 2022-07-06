@@ -2,16 +2,6 @@
 """A class Student"""
 
 
-def class_to_json(obj):
-    """Serializes simple data structures and return their json string
-    Args:
-        obj (Object): object
-    Returns:
-        json string
-    """
-    return (obj.__dict__)
-
-
 class Student:
     """A Student class"""
 
@@ -28,4 +18,5 @@ class Student:
 
     def to_json(self):
         """serializes an object"""
-        return class_to_json(self)
+        obj_dict = self.__dict__
+        return obj_dict

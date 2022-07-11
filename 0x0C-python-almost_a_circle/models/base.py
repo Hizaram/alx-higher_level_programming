@@ -48,6 +48,18 @@ class Base:
         with open(cls.__name__ + '.json', 'w') as f:
             f.write(json_string)
 
+    @staticmethod
+    def from_json_string(json_string):
+        """from_json_string - creates list of the JSON string representation
+        Args:
+            json_string (str): JSON string of object
+        Returns:
+            list of JSON string
+        """
+        if json_string is None or len(json_string) == 0:
+            return []
+        return json.loads(json_string)
+
     @classmethod
     def create(cls, **dictionary):
         """Creates an instance with all attributes set

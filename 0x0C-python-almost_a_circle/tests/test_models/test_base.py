@@ -8,6 +8,7 @@ from models.square import Square
 
 
 class TestBaseClass(unittest.TestCase):
+    """Test for Base class"""
 
     def test_class_membership(self):
         """Base class unittest"""

@@ -3,11 +3,11 @@
 # JAVASCRIPT WARMUP
 
 # AIM:
-	The aim of this repo is to familiarise oneself with basic javscript lingo which includes variables, const, let, var
+The aim of this repo is to familiarise oneself with basic javscript lingo which includes variables, const, let, var
 basic functions and lots more
 
 # Objective:
-	At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 *  Why JavaScript programming is amazing
 * How to run a JavaScript script

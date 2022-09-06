@@ -35,3 +35,9 @@ The aim of this repository is to familiarise oneself with the JavaScript classes
 * 2-rectangle.js: A class Rectangle that defines a rectangle based on 1-rectangle.js
 * 3-rectangle.js: A class Rectangle that defines a rectangle based on 2-rectangle.js
 * 4-rectangle.js: A class Rectangle that defines a rectangle based on 3-rectangle.js
+* 5-square.js: A class Square that inherits from class Rectangle based on 4-rectangle.js
+* 6-square.js: A class Square that inherits from class Square based on 5-square.js
+* 7-occurrences.js: A script that writes a function that returns the number of occurrences of an argument in a list
+* 8-esrever.js: A script that writes a function that returns the reverse of the elements in a list
+* 9-logme.js: A script that writes a function that prints the number of arguments already printed and the new argument value
+* 10-converter.js: A script that writes a function that converts a number from base 10 to another base passed as argument

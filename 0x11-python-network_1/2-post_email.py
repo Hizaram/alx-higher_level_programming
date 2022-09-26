@@ -3,7 +3,7 @@
 as parameter and displays the utf-8 encoded response
 """
 import sys
-from urllib import request
+from urllib import request, parse
 
 
 if __name__ == "__main__":

@@ -12,14 +12,14 @@ if __name__ == '__main__':
     else:
         q = ""
 
-        form_data = [('q', q)]
-        response = requests.post(url, data=form_data)
-        try:
-            json_content = response.json()
-            if json_content:
-                print('[{}] {}'.format(json_content['id'], json_content
-                      ['name']))
-            else:
-                print('No result')
-        except Exception:
-            print('Not a valid JSON')
+    form_data = [('q', q)]
+    response = requests.post(url, data=form_data)
+    try:
+        json_content = response.json()
+        if json_content:
+            print('[{}] {}'.format(json_content['id'], json_content
+                  ['name']))
+        else:
+            print('No result')
+    except Exception:
+        print('Not a valid JSON')

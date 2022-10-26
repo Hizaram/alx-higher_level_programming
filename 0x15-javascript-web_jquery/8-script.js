@@ -1,11 +1,9 @@
-$.ajax({
-  type: 'GET',
-  url: 'https://swapi-api.hbtn.io/api/films/?format=json',
-  success: function (data) {
-    $.each(data.results, function (k, v) {
-      const title = v.title;
-      $('#list_movies').append(`<li>${title}</li>`);
-    });
-  },
-  dataType: 'json'
+// Fetches and lists the title for all movies
+// by using this URL: https://swapi-api.hbtn.io/api/films/?format=json
+const swapiAPI = 'https://swapi-api.hbtn.io/api/films/?format=json';
+
+$.getJSON(swapiAPI).done((data) => {
+  $.each(data.results, (_, result) => {
+    $('UL#list_movies').append(`<li>${result.title}</li>`);
+  });
 });
